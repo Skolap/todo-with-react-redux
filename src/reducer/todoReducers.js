@@ -3,12 +3,12 @@ const initialState = {
 };
 const todoReducers = (state = initialState, action) => {
   switch (action.type) {
-    case "ADD_TODO": {
+    case "ADD_TODO":
       const { id, data } = action.payload;
 
       return {
         ...state,
-        data: [
+        list: [
           ...state.list,
           {
             id: id,
@@ -16,7 +16,23 @@ const todoReducers = (state = initialState, action) => {
           },
         ],
       };
-    }
+
+    case "DELETE_TODO":
+      // return all list expect clicked one
+      const newList = state.list.filter((elem) => elem.id !== action.id);
+
+      return {
+        ...state,
+        list: newList,
+      };
+    case "REMOVE_TODO":
+      return {
+        ...state,
+        list: [],
+      };
+
+    default:
+      return state;
   }
 };
 
