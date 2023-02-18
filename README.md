@@ -31,7 +31,7 @@ React, Redux, Firebase Hosting
 <img src="./assets/screenshots/1.png" width="500"> <br>
 <img src="./assets/screenshots/2.png" width="500"> <br>
 <br>
-![Demo]()
+![Demo](https://github.com/Skolap/todo-with-react-redux/blob/main/assets/screenshots/3.gif?raw=true)
 
 <!-- ![Alt text](/src/assets/screenshots/1.png?raw=true "Home")
 ![Alt text](/src/assets/screenshots/2.png?raw=true "Cart")
